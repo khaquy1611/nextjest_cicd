@@ -13,3 +13,10 @@ export default function Page({ params }: Params) {
   <p>Welcome to HaNoi</p>
   </>;
 }
+
+export async function generateStaticParams() {
+  return [
+    { slug: "hello-world" },
+    { slug: "nextjs" },
+  ];
+}
